@@ -14,7 +14,8 @@ Pre-Install Requirements
 	- Getopt::Whatever
 	- Digest::MD5
 	- Config::IniFiles
- - Service-Now SOAP API must be enabled, refer to Service-Now documentation for more details.
+ 	- Service-Now SOAP API must be enabled, refer to Service-Now documentation for more details.
+
 =========================================
 Project State
 =========================================
