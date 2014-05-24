@@ -9,6 +9,7 @@ Pre-Install Requirements
  - MySQL Database
  - Install the below Perl modules
 	- DBI
+	- XML::Simple
 	- Soap::Lite
 	- Config::INI::Reader
 	- Getopt::Whatever
@@ -219,6 +220,15 @@ Execution usage:
 =========================================
 Patch notes
 =========================================
+v1.2:
+- Now requires and loads XML::Simple to resolve some distro compatibility issues. (Thanks KL)
+- When doing a builddb it now attempts simple authentication when talking to the WSDL. This must have been a security hole fixed in the Service-Now Dublin update. (Thanks KL)
+- No longer bewildering writes the data-type of extracted fields when doing a builddb to nothing in particular. (Thanks KL)
+
+v1.1:
+- Fixed Storm Watch database string error preventing it from operating properly when dropping tickets. (thanks AM)
+- Fixed the script being ignorant of the host UP state. (thanks AM)
+
 v1.0:
 - Removed unnecessary code.
 - Fixed several bugs relating to Storm Watch logic.
